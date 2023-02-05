@@ -1,0 +1,62 @@
+@import '../../../assets/styles/mixin';
+.loading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 47.19%, #000000 100%),
+    linear-gradient(90.65deg, #3b4260 2.74%, #3b3755 30.62%, #3c2e4d 59.98%, #3d1e3b 99.34%);
+
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+
+  &__logo {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__title {
+    margin-bottom: 42px;
+    padding-right: 38px;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+
+    color: var(--white);
+  }
+
+  &__bar {
+    position: relative;
+    display: inline-block;
+    width: 312px;
+    height: 8px;
+    border-radius: 8px;
+    background: linear-gradient(
+      180deg,
+      rgba(251, 254, 255, 0.3744) 0%,
+      rgba(255, 255, 255, 0) 100%
+    );
+
+    overflow: hidden;
+
+    &-process {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 0;
+      height: 100%;
+      border-radius: 8px;
+
+      background: linear-gradient(180deg, #7e7e7e 0%, rgba(126, 126, 126, 0.54) 100%);
+    }
+  }
+}

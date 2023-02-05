@@ -1,0 +1,50 @@
+.help-and-support__swiper {
+  .swiper {
+    &-button {
+      &-next,
+      &-prev {
+        top: 54%;
+        padding: 36px 20px;
+        background-repeat: no-repeat;
+        background-size: 100% 60%;
+        background-position: center;
+        opacity: 1;
+        transition: all 0.6s linear 0s;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.6;
+        }
+        &::after {
+          display: none;
+        }
+
+        @media all and (min-width: 600px) {
+          padding: 36px 32px;
+        }
+
+        @media all and (min-width: 900px) {
+          padding: 36px 32px;
+        }
+      }
+
+      &-next {
+        right: 0;
+        background-image: url('../../assets/images/svg/arrow-right.svg');
+        @media all and (min-width: 600px) {
+          background-size: auto;
+        }
+      }
+
+      &-prev {
+        left: 0;
+        background-image: url('../../assets/images/svg/arrow-left.svg');
+
+        @media all and (min-width: 600px) {
+          background-size: auto;
+        }
+      }
+    }
+  }
+}

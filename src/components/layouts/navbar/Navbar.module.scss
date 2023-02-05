@@ -1,0 +1,189 @@
+.navbar {
+  &__mobile-item {
+    span {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+
+      color: var(--white);
+      transition: all 0.2s linear 0s;
+
+      cursor: pointer;
+      opacity: 1;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+
+  &__item {
+    span {
+      position: relative;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+
+      color: var(--white);
+      transition: all 0.2s linear 0s;
+
+      cursor: pointer;
+      opacity: 1;
+
+      &:hover {
+        color: var(--yellow);
+        opacity: 0.8;
+      }
+
+      @media all and (min-width: 900px) and (max-width: 1200px) {
+        font-size: 1.2rem;
+        line-height: 1.6rem;
+      }
+    }
+
+    &-dropdown {
+      span {
+        &::after {
+          content: '';
+          position: absolute;
+          top: 44%;
+          margin-left: 4px;
+          width: 0;
+          height: 0;
+          border-left: 4px solid transparent;
+          border-right: 4px solid transparent;
+          border-top: 4px solid var(--white);
+        }
+
+        &:hover {
+          &::after {
+            border-top: 4px solid var(--yellow);
+            opacity: 0.8;
+          }
+        }
+      }
+    }
+
+    &-soon {
+      &::after {
+        content: 'Soon';
+        position: absolute;
+        top: 4%;
+        right: 0;
+        padding: 2px 8px;
+        border-radius: 2px;
+
+        text-transform: none;
+        font-weight: 500;
+        font-size: 0.4rem;
+        line-height: 0.8rem;
+
+        color: var(--yellow);
+        background: var(--red);
+
+        @media all and (min-width: 900px) {
+          padding: 0 8px;
+        }
+      }
+
+      &:hover {
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    &-logo {
+      span {
+        width: 106px;
+        height: 40px;
+
+        @media (min-width: 900px) {
+          width: 136px;
+          height: 50px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-codepen,
+    &-toggle {
+      span {
+        display: flex;
+        justify-content: center;
+        width: 20px;
+        height: 20px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+
+    &-mobile {
+      fill: var(--white);
+      opacity: 1;
+      transition: all 0.6 linear;
+
+      span {
+        display: flex !important;
+        width: 30px;
+        height: 30px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      @media all and (min-width: 900px) {
+        display: flex;
+        justify-content: center;
+
+        span {
+          width: 30px;
+          height: 30px;
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &-arrow {
+        fill: var(--white);
+        width: 24px;
+        height: 24px;
+        opacity: 1;
+        transition: all 0.6 linear;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    &-logo {
+      span {
+        margin: 0 auto;
+        width: 118px;
+        height: 45px;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

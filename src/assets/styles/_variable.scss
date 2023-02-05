@@ -1,0 +1,96 @@
+:root {
+  --white: #ffffff;
+
+  --black: #000000;
+  --black-01: f0f0f0;
+
+  --red: red;
+
+  --yellow: #fdc500;
+  --yellow-01: #e7ac00;
+
+  --bricky: #ff8a00;
+
+  --gray: #2c2c2c;
+  --gray-01: #c9c9c9;
+  --gray-02: #717171;
+  --gray-03: #17222c;
+  --gray-04: #d9d9d9;
+  --gray-05: #0d0c0c;
+  --gray-06: #e2e2e2;
+  --gray-07: #c4c4c4;
+  --gray-08: #929292;
+  --gray-09: #272727;
+  --gray-10: #151515;
+  --gray-11: #050505;
+  --gray-12: #060607;
+  --gray-13: #969696;
+
+  --purple: #30283c;
+  --purple-01: #2a2136;
+  --purple-02: rgba(0, 0, 0, 0.3);
+  --purple-03: #2a1930;
+
+  --primary: linear-gradient(180deg, var(--yellow) 0%, var(--bricky) 100%);
+  --secondary: var(--white);
+  --danger: var(--gray-07);
+  --light: var(--purple);
+
+  --background-app: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(0, 0, 0, 0.19) 0.01%,
+      rgba(0, 0, 0, 0.59) 100%
+    ),
+    linear-gradient(90.65deg, #3b4260 2.74%, #3b3755 30.62%, #3c2e4d 59.98%, #3d1e3b 99.34%);
+
+  --background-web: linear-gradient(
+    -1deg,
+    #484e4b -10%,
+    #000000 5%,
+    #374057 22%,
+    #272c39 28%,
+    #151515 37%,
+    #14171e 48%,
+    #0f1f3e 72%,
+    #000000 84%,
+    #3b4260 94%,
+    #3d1e3b 100%
+  );
+
+  --background-web-about-us: linear-gradient(
+    to right,
+    #3b4260 2.74%,
+    #3b3755 30.62%,
+    #3c2e4d 59.98%,
+    #3d1e3b 99.34%
+  );
+
+  --background-web-stacking: linear-gradient(
+    to right,
+    #3b4260 2.74%,
+    #3b3755 30.62%,
+    #3c2e4d 59.98%,
+    #3d1e3b 99.34%
+  );
+
+  --background-nav-mobile: linear-gradient(90deg, #2f2a51 20%, #3c2e4d 60%, #3d1e3b 100%);
+
+  --background-footer: #171d27;
+
+  --btn-large: 12px 16px;
+  --btn-regular: 10px 16px;
+  --btn-small: 8px 12px;
+
+  --btn-font-large: 1.8rem;
+  --btn-font-regular: 1.6rem;
+  --btn-font-small: 1.4rem;
+
+  --btn-regular-long: 10px 60px;
+  --btn-font-regular-long: 1.4rem;
+
+  --btn-large-long: 12px 30px;
+  --btn-font-large-long: 1.4rem;
+
+  --overlay: rgba(0, 0, 0, 0.6);
+}

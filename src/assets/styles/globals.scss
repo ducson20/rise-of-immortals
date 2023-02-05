@@ -1,0 +1,72 @@
+@import './base';
+@import './mixin';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+
+  @media all and (max-width: 600px) and (hover: hover) and (pointer: fine) {
+    pointer-events: none;
+  }
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: 400;
+  src: url('../../fonts/barlow/Barlow-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: Barlow;
+  font-weight: 500;
+  src: url('../../fonts/barlow/Barlow-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: 600;
+  src: url('../../fonts/barlow/Barlow-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: Barlow;
+  font-weight: 700;
+  src: url('../../fonts/barlow/Barlow-Bold.ttf') format('truetype');
+}
+
+body {
+  font-family: Barlow, sans-serif;
+  font-size: 1.6rem;
+  font-style: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+
+  &-slide {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+}

@@ -1,0 +1,14 @@
+.video {
+  border-radius: 20px;
+  width: 226px;
+  height: 196px;
+  @media all and (min-width: 600px) {
+    width: 310px;
+    height: 280px;
+  }
+  @media all and (min-width: 900px) {
+    width: 350px;
+    height: 320px;
+  }
+  object-fit: fill;
+}
